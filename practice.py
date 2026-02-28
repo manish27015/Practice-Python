@@ -20,6 +20,3 @@ x = 5
 x = x + 3
 x = x * 2
 print(x)
-x = 5
-y = 3
-print(x & y)
