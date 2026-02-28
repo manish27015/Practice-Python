@@ -1,0 +1,30 @@
+a = 15
+b = 23
+z = 5
+
+c = a+b
+d = b/z
+e = b%z
+
+print(c)
+print(d)# Quotient
+print(e)# remainder
+
+a = 40
+print(type(a))
+# f variable is greater than g or not
+f = 34
+g = 80
+
+print(bool(f>g))
+
+h = int(input("enter the 1st number"))
+i = int(input("Enter the 2nd number"))
+
+k = (h+i)/2
+print(k)
+
+l = int(input("enter the number"))
+m = l*l
+
+print(m)
