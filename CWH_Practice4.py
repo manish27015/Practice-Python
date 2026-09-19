@@ -8,7 +8,7 @@ f2 = int(input("Tell the Marks here"))
 marks.append(f2)
 f3 = int(input("Tell the Marks here"))
 marks.append(f3)
-f4 = int(input("Tell the Marks here"))
+f4 = int(input("Tell the Marks here")) 
 marks.append(f4)
 f5 = int(input("Tell the Marks here"))
 marks.append(f5)
@@ -59,4 +59,32 @@ print(sum(l))
 
 a = (7, 0, 8, 0, 0, 9)
 n = a.count(0)
+n1 = a.index(0)
 print(n)
+print(n1)
+
+# Check wether is pallindrom or not
+class Solution:
+    def isPalindrome(self, x):
+        if x < 0:
+            return False
+
+        rev = 0
+        temp = x
+
+        while temp != 0:
+            digit = temp % 10
+            rev = rev * 10 + digit
+            temp //= 10
+        
+        return rev == x
+
+x = int(input("Enter a number: "))
+
+obj = Solution()
+result = obj.isPalindrome(x)
+
+print("Is Palindrome:", result)
+    
+    
+
