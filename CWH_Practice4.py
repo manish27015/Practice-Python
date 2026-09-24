@@ -64,6 +64,7 @@ print(n)
 print(n1)
 
 # Check wether is pallindrom or not
+'''
 class Solution:
     def isPalindrome(self, x):
         if x < 0:
@@ -88,3 +89,11 @@ print("Is Palindrome:", result)
     
     
 
+'''
+# n= "python"
+# print(n[0:3:1])
+name = "Education"
+
+for char in name:
+    if char in "aeiouAEIOU":
+        print(char)

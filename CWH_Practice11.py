@@ -355,3 +355,16 @@ class Vector:
     
 v1 = Vector([1,2,3])
 print(len(v1))
+
+
+
+class Team:
+    def __init__(self, members):
+        self.members = members
+
+    def __len__(self):
+        return len(self.members)
+
+team = Team(["Harry", "Ram", "Shyam"])
+print(team.members)
+print(len(team))

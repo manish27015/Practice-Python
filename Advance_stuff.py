@@ -38,7 +38,8 @@ addition(12,20)
 #for args used *
 #for Kwargs used **
 #Args- Args used for multiple positional arguments, and kwargs are used for multiple key word arguments.
-"""def addition(*args):
+"""
+def addition(*args):
     sum = 0
     for i in args:
         sum = sum + i
@@ -74,8 +75,8 @@ addition(12,20)
 # l = [i for i in range(1,21) if i % 2 == 0]  # List comp
 # print(l)
 
-# l = {i : i**2 for i in range(1,10)} #Dictionary comp
-# print(l)
+l = {i : i**2 for i in range(1,10)} #Dictionary comp
+print(l)
 
 # Lambda function
 """
@@ -117,6 +118,7 @@ result = filter (lambda x : True if x%2 == 0 else False , a)    # Also do like t
 print(list(result))
 """
 # Package & Modules
+"""
 import modelss.maths as maths
 
 print(maths.addition(12,12))
@@ -124,4 +126,4 @@ print(maths.multiplication(2,6))
 
 from modelss import hello, maths # this is the way import file
 
-
+"""

@@ -24,19 +24,19 @@ class Car:
 """                         Constructor                 """
 
 
-# class Factory:
-#     def __init__(self,material,zips,pockets):
-#         self.material = material
-#         self.zips = zips
-#         self.pockets = pockets
+class Factory:
+    def __init__(self,material,zips,pockets):
+        self.material = material
+        self.zips = zips
+        self.pockets = pockets
     
-#     def show(self):
-#         print(f"Your object details are {self.material}, {self.pockets}, {self.zips}")
+    def show(self):
+        print(f"Your object details are {self.material}, {self.pockets}, {self.zips}")
 
-# reebok = Factory("leather",3,2)
-# campus = Factory("nylon",3,3)
+reebok = Factory("leather",3,2)
+campus = Factory("nylon",3,3)
 
-# reebok.show()
+reebok.show()
 
 """                 Attribute                   """
 #Atrributes are just variables define inside the class those are attribute.
@@ -65,7 +65,7 @@ class Animal:
     def hello(cls):
         print("How are you brother")
 
-    @staticmethod
+    @staticmethod #static method
     def static():
         print("How are you")
 

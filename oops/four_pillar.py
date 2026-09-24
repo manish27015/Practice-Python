@@ -19,8 +19,10 @@ print(obj.a)
 obj2 = FactoryPune()
 print(obj.a)
 obj2.hello()
-
+print(obj2.a)
 """
+
+
 """
 class Animal:
     def __init__(self,name):
@@ -37,28 +39,43 @@ class Human(Animal):
     def show(self):
         print(f"hello your name is {self.name},{self.age}")
 
-person1 = Human("Manish",23)
+person1 = Human("Raushan",23)
 person1.show()
 animal1 = Animal("cat")
 animal1.show()
 """
-"""
-class Animal:
-    def __init__(self,name):
-        pass
 
-class Human:
-    def __init__(self,name,age):
-       pass
+# class Animal:
+#     def __init__(self,name):
+#         pass
 
-class Robots(Human,Animal):
-    name3 = "charli123"
+# class Human:
+#     def __init__(self,name,age):
+#        pass
 
-obj = Robots("Raushan",28)
-"""
+# class Robots(Human,Animal):
+#     name = "charli123"
+
+# obj = Robots("Raushan",28)
+# print(obj.name)
+
+
 
 """Note:- The constructor function will be inherited of the first class
 that has been inherited. This is MRO (Method Resolution Order) followed by python"""
+"""
+class animal:
+    name1 = "lion"
+
+class human:
+    name2 = "Raj"
+
+class robot(animal,human):
+    name3 = "chiti"
+
+obj = robot()
+print(obj.name1)
+"""
 
 """
 class Factory:  #Grandparent
@@ -83,6 +100,7 @@ obj = punefactory("nylon",2,"black",12)
 # print(obj.pockets)
 print(vars(obj))
 """
+
 #Polymorphism-
 """Polymorphism is a core concept in OOps. The word means "Many forms"
  and in programming, it allows the same interface or method name to behave
@@ -90,7 +108,7 @@ print(vars(obj))
 
 # class Animal:
 #     def show(self):
-#         print("Hello, ia am Manish")
+#         print("Hello, i am Manish")
     
 # class Human(Animal):
 #     def show(self): #Method overriding
@@ -117,7 +135,7 @@ obj2.show()
 
 #Encapsulation
 """
-It means putting dat (variables) and code (function) together in one
+It means putting data (variables) and code (function) together in one
 place - inside a class.
 - It also means hiding the internal details of how things work, and
 only showing what is needed.
@@ -144,15 +162,15 @@ obj.show2()
 # print(obj.a)
 """
 # Acess Modifier
+
+# class Factory:
+#     __a = "pune"
+#     def show(self):
+#         print(Factory.__a)
+
+# obj = Factory()
+# obj.show()
 """
-class Factory:
-    __a = "pune"
-    def show(self):
-        print(Factory.__a)
-
-obj = Factory()
-obj.show()
-
 class Demo:
     def __init__(self):
         self.name = "Public Member"     #PUBLIC
@@ -167,11 +185,12 @@ class Demo:
         
 obj = Demo()
 obj.show()
-print("\nOutside the class:")
-print("Public:", obj.name)        
-print("Protected:", obj._age) 
-print("Private:", obj._Demo__salary)
 """
+# print("\nOutside the class:")
+# print("Public:", obj.name)        
+# print("Protected:", obj._age) 
+# print("Private:", obj._Demo__salary)
+
 #Abstraction 
 """
 Abstraction does not exit in python "we can achives it using a library we will
@@ -179,7 +198,7 @@ see what is a library later."
 - Abstraction is used to simplifying complex systems by focusing on essential
 features and hiding unnecessary details.
 -It is used to define a common interface for different subclasses."""
-
+"""
 from abc import ABC, abstractmethod
 
 class Abstract(ABC):
@@ -206,3 +225,4 @@ class Circle(Abstract):
         print("I have created this")
 
 obj = Circle(7)
+"""
